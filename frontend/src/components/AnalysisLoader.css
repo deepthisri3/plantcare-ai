@@ -1,0 +1,131 @@
+.analysis-loader-container {
+  padding: 56px 32px;
+  text-align: center;
+  max-width: 680px;
+  margin: 36px auto;
+  border: 1.5px solid var(--color-sage-light);
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9f6 100%);
+}
+
+.loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader-halo-wrapper {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.loader-halo-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(133, 160, 135, 0.4) 0%, rgba(45, 90, 66, 0.05) 70%);
+  animation: pulseSubtle 2s infinite ease-in-out;
+}
+
+.loader-icon-center {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1b3829 0%, #2d5a42 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(27, 56, 41, 0.22);
+}
+
+.loader-active-icon {
+  animation: fadeIn 0.4s ease;
+}
+
+.loader-title {
+  font-size: 1.8rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 8px;
+}
+
+.loader-stage-text {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--color-forest-light);
+  min-height: 1.7em;
+  margin-bottom: 28px;
+  transition: all 0.3s ease;
+}
+
+.stage-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  max-width: 520px;
+}
+
+.stage-step-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.stage-step-pill.pending {
+  background-color: #f0f2ef;
+  color: #8c9e90;
+  border: 1px solid #e2e6e1;
+}
+
+.stage-step-pill.completed {
+  background-color: var(--color-sage-soft);
+  color: var(--color-forest);
+  border: 1px solid var(--color-sage-light);
+}
+
+.stage-step-pill.active {
+  background-color: var(--color-forest);
+  color: #ffffff;
+  border: 1px solid var(--color-forest);
+  box-shadow: 0 2px 8px rgba(27, 56, 41, 0.2);
+}
+
+.stage-step-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.loader-subtext {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #6b8071;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dot-sep {
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .stage-indicators {
+    flex-direction: column;
+    align-items: center;
+  }
+}

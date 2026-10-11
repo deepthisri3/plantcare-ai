@@ -1,0 +1,636 @@
+.plant-result-container {
+  padding: 40px 0;
+}
+
+.result-main-card {
+  padding: 38px;
+  border: 1.5px solid rgba(133, 160, 135, 0.35);
+  background: #ffffff;
+}
+
+.result-top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed var(--color-sand);
+  padding-bottom: 12px;
+}
+
+.result-field-tag {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-forest);
+}
+
+.result-model-badge {
+  font-size: 0.74rem;
+  background-color: var(--color-sage-soft);
+  color: var(--color-forest);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  font-family: monospace;
+}
+
+.result-headline-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.result-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-intro-sub {
+  font-size: 0.95rem;
+  color: var(--color-sage);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.plant-common-name {
+  font-size: 2.5rem;
+  color: var(--color-forest-deep);
+  line-height: 1.15;
+}
+
+.plant-scientific-name {
+  font-size: 1.15rem;
+  color: #556c5c;
+  margin-top: 4px;
+}
+
+.confidence-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-sand);
+  padding: 8px 18px;
+  border-radius: var(--radius-md);
+}
+
+.confidence-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #728475;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.confidence-number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-forest);
+}
+
+/* Overview grid */
+.result-overview-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+
+.result-image-box {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 180px;
+  background-color: #1a2a1d;
+}
+
+.result-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.result-image-badge {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background-color: rgba(18, 40, 29, 0.75);
+  color: #ffffff;
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(4px);
+}
+
+.health-status-card {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.health-badge-healthy {
+  background-color: var(--status-healthy-bg);
+  border-color: var(--status-healthy-border);
+  color: var(--status-healthy-text);
+}
+
+.health-badge-attention {
+  background-color: var(--status-attention-bg);
+  border-color: var(--status-attention-border);
+  color: var(--status-attention-text);
+}
+
+.health-badge-unhealthy {
+  background-color: var(--status-unhealthy-bg);
+  border-color: var(--status-unhealthy-border);
+  color: var(--status-unhealthy-text);
+}
+
+.health-badge-uncertain {
+  background-color: var(--status-uncertain-bg);
+  border-color: var(--status-uncertain-border);
+  color: var(--status-uncertain-text);
+}
+
+.health-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.health-status-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.health-card-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.health-card-title {
+  font-size: 1.4rem;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.health-status-desc {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  color: inherit;
+  opacity: 0.9;
+}
+
+.severity-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.82rem;
+}
+
+.expert-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #ffffff;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  color: #c62828;
+}
+
+.result-summary-block {
+  background: var(--color-sage-soft);
+  border-left: 3px solid var(--color-forest);
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 26px;
+}
+
+.summary-text {
+  font-size: 1.02rem;
+  color: var(--color-forest-deep);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.result-section-box {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-sand);
+}
+
+.section-box-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.15rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 14px;
+}
+
+.box-icon {
+  color: var(--color-forest-light);
+}
+
+.disease-name-text {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-forest-deep);
+}
+
+.symptoms-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.symptom-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f7f5f0;
+  border: 1px solid var(--color-sand);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  color: #37473b;
+  font-weight: 500;
+}
+
+.symptom-bullet {
+  color: var(--color-forest);
+  font-weight: 800;
+}
+
+.causes-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cause-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: #3f5243;
+}
+
+.cause-marker {
+  color: var(--color-earth-light);
+  font-weight: 700;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recommendation-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fbfbf9;
+  border: 1px solid var(--color-sand);
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+}
+
+.rec-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-forest);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.76rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.rec-text {
+  font-size: 0.92rem;
+  color: #2e4033;
+  line-height: 1.45;
+}
+
+.field-notes-list {
+  list-style: square;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-note-item {
+  font-size: 0.9rem;
+  color: #495e4d;
+}
+
+.neutral-note {
+  font-size: 0.9rem;
+  color: #637767;
+  font-style: italic;
+}
+
+.disclaimer-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-sand);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  margin-bottom: 34px;
+}
+
+.disclaimer-icon {
+  color: var(--color-earth-light);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.disclaimer-text {
+  font-size: 0.8rem;
+  color: #617466;
+  line-height: 1.45;
+}
+
+/* Return Outside Banner */
+.return-outside-banner {
+  background: linear-gradient(135deg, #1b3829 0%, #254d37 100%);
+  color: #ffffff;
+  padding: 32px 36px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 8px 24px rgba(27, 56, 41, 0.25);
+  flex-wrap: wrap;
+}
+
+.return-outside-title {
+  font-size: 1.85rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.return-outside-quote {
+  font-size: 0.96rem;
+  color: var(--color-sage-light);
+  line-height: 1.4;
+}
+
+.return-outside-quote strong {
+  color: var(--color-sun);
+}
+
+.return-outside-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.return-btn-find {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.return-btn-find:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+}
+
+.return-btn-outside {
+  background-color: var(--color-sun);
+  color: var(--color-forest-deep);
+  box-shadow: 0 4px 12px rgba(233, 196, 106, 0.3);
+}
+
+.return-btn-outside:hover {
+  background-color: #dfb758;
+}
+
+@media (max-width: 768px) {
+  .result-main-card {
+    padding: 22px 18px;
+  }
+  .plant-common-name {
+    font-size: 2rem;
+  }
+  .result-overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .result-image-box {
+    height: 220px;
+  }
+  .return-outside-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 18px;
+  }
+  .return-outside-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+  .return-outside-buttons button {
+    width: 100%;
+  }
+
+  .export-action-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .export-buttons-group {
+    width: 100%;
+  }
+
+  .btn-export-action {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* ============================================================
+   EXPORT FIELD CARD & PRINT/PDF STYLES
+   ============================================================ */
+.export-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-sand-soft);
+  border: 1px solid var(--color-sand);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.export-bar-label {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--color-forest-deep);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.export-buttons-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-export-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  border: 1px solid var(--color-sand);
+  color: var(--color-forest-deep);
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.btn-export-action:hover {
+  background: var(--color-sage-soft);
+  border-color: var(--color-forest-light);
+  color: var(--color-forest);
+  transform: translateY(-1px);
+}
+
+.btn-export-action:active {
+  transform: translateY(0);
+}
+
+.export-success-icon {
+  color: #2e7d32;
+}
+
+/* Print Only & PDF Optimization */
+.print-only-header {
+  display: none;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+    font-size: 11pt;
+  }
+
+  .navbar-header,
+  .hero-section,
+  .outside-checklist-section,
+  .how-it-works-section,
+  .uploader-section,
+  .outdoor-challenge-section,
+  .open-ai-section,
+  .touch-grass-footer,
+  .export-action-bar,
+  .return-outside-banner,
+  .modal-backdrop,
+  .disclaimer-callout {
+    display: none !important;
+  }
+
+  .plant-result-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .result-main-card {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .print-only-header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #2d5a42;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+
+  .print-brand-title {
+    font-size: 16pt;
+    font-weight: 800;
+    color: #2d5a42;
+  }
+
+  .print-brand-sub {
+    font-size: 9pt;
+    color: #555555;
+    margin-top: 2px;
+  }
+
+  .print-date {
+    font-size: 9pt;
+    color: #666666;
+  }
+
+  .result-overview-grid {
+    grid-template-columns: 200px 1fr !important;
+    gap: 16px !important;
+  }
+
+  .result-image-box {
+    height: 180px !important;
+  }
+
+  .health-status-card {
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+
+  .result-section-box {
+    page-break-inside: avoid;
+    margin-bottom: 14px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .recommendation-card {
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid;
+  }
+}
+

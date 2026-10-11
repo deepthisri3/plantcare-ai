@@ -1,0 +1,99 @@
+.touch-grass-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+#analyze-section-wrapper {
+  position: relative;
+}
+
+/* Error Card */
+.analysis-error-card {
+  padding: 32px;
+  background-color: #fffaf9;
+  border: 1.5px solid var(--status-unhealthy-border);
+  margin: 24px auto 40px;
+}
+
+.error-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.error-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: var(--status-unhealthy-bg);
+  color: var(--status-unhealthy-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.error-card-title {
+  font-size: 1.35rem;
+  color: var(--status-unhealthy-text);
+  margin-bottom: 2px;
+}
+
+.error-card-code {
+  font-size: 0.78rem;
+  color: #8c5b5b;
+  font-family: monospace;
+}
+
+.error-explanation {
+  font-size: 1rem;
+  color: #3b2c2c;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.troubleshooting-steps {
+  background: #ffffff;
+  border: 1px solid rgba(198, 40, 40, 0.15);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 24px;
+}
+
+.troubleshooting-steps strong {
+  display: block;
+  font-size: 0.86rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 8px;
+}
+
+.troubleshooting-steps ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.troubleshooting-steps li {
+  font-size: 0.88rem;
+  color: #4b3e3e;
+}
+
+.error-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .analysis-error-card {
+    padding: 22px 18px;
+  }
+}

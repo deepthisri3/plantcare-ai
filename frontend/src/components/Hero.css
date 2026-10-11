@@ -1,0 +1,175 @@
+.hero-section {
+  padding: 64px 0 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-tagline-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-sage-soft);
+  color: var(--color-forest);
+  border: 1px solid var(--color-sage-light);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.hero-super {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: var(--color-sage);
+  text-transform: uppercase;
+}
+
+.hero-main {
+  font-size: 2.85rem;
+  line-height: 1.15;
+  color: var(--color-forest-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero-subheading {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #3f5546;
+  max-width: 540px;
+  margin-bottom: 32px;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hero-outdoor-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #657a6b;
+}
+
+.sun-icon {
+  color: var(--color-sun-dark);
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.organic-blob-backdrop {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 54% 46% 70% 30% / 40% 60% 40% 60%;
+  background: radial-gradient(circle, rgba(133, 160, 135, 0.25) 0%, rgba(233, 196, 106, 0.15) 100%);
+  filter: blur(24px);
+  z-index: 1;
+}
+
+.hero-nature-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(133, 160, 135, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  width: 100%;
+  max-width: 340px;
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.nature-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px dashed var(--color-sage-light);
+  padding-bottom: 10px;
+}
+
+.field-note-tag {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-forest);
+}
+
+.time-tag {
+  font-size: 0.74rem;
+  color: var(--color-earth-light);
+  background: var(--color-cream);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+}
+
+.nature-card-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.leaf-svg {
+  width: 160px;
+  height: 130px;
+  filter: drop-shadow(0 6px 12px rgba(27, 56, 41, 0.12));
+}
+
+.nature-card-caption {
+  font-size: 0.82rem;
+  color: #495e50;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.nature-card-caption strong {
+  display: block;
+  color: var(--color-forest-deep);
+  margin-bottom: 2px;
+}
+
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .hero-main {
+    font-size: 2.2rem;
+  }
+  .hero-visual {
+    order: -1;
+  }
+  .hero-nature-card {
+    max-width: 290px;
+  }
+}

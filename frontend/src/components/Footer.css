@@ -1,0 +1,147 @@
+.touch-grass-footer {
+  background-color: var(--color-forest-deep);
+  color: #d1ded4;
+  padding: 56px 0 28px;
+  border-top: 1px solid rgba(133, 160, 135, 0.2);
+  margin-top: 64px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.footer-icon-wrap {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background-color: var(--color-forest-light);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-brand-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer-mission-line {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-mission-sub {
+  font-size: 0.88rem;
+  color: var(--color-sage-light);
+  margin-bottom: 12px;
+}
+
+.footer-disclaimer-short {
+  font-size: 0.76rem;
+  color: var(--color-sun);
+  background: rgba(233, 196, 106, 0.12);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  max-width: fit-content;
+}
+
+.footer-links-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #b5c7ba;
+  text-decoration: none;
+  font-size: 0.86rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-nav-link:hover {
+  color: #ffffff;
+}
+
+.footer-text-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #b5c7ba;
+  font-size: 0.86rem;
+  padding: 0;
+  text-align: left;
+}
+
+.footer-text-btn:hover {
+  color: #ffffff;
+}
+
+.footer-challenge-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #b5c7ba;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.footer-challenge-tag {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--color-forest-deep);
+  background: var(--color-sage-light);
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.footer-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  font-size: 0.78rem;
+  color: #8fa594;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 800px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

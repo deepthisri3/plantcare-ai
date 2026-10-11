@@ -1,0 +1,144 @@
+.outdoor-challenge-section {
+  padding: 40px 0;
+}
+
+.challenge-card {
+  padding: 36px;
+  background: linear-gradient(145deg, #ffffff 0%, #f9fbf8 100%);
+  border: 1.5px solid rgba(133, 160, 135, 0.35);
+}
+
+.challenge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.challenge-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-sun-soft);
+  color: var(--color-sun-dark);
+  border: 1px solid rgba(233, 196, 106, 0.4);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.challenge-meta-pills {
+  display: flex;
+  gap: 8px;
+}
+
+.challenge-category,
+.challenge-difficulty {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-sage-soft);
+  color: var(--color-forest);
+}
+
+.challenge-body {
+  margin-bottom: 28px;
+}
+
+.challenge-prefix {
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-sage);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.challenge-title {
+  font-size: 1.85rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 12px;
+}
+
+.challenge-mission {
+  font-size: 1.15rem;
+  color: #2e4435;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.challenge-tip-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--color-cream);
+  border: 1px solid var(--color-sand);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+}
+
+.tip-icon {
+  color: var(--color-sun-dark);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tip-content {
+  font-size: 0.88rem;
+  color: #4a5e4f;
+  line-height: 1.45;
+}
+
+.tip-content strong {
+  display: block;
+  color: var(--color-forest-deep);
+  margin-bottom: 2px;
+}
+
+.challenge-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed var(--color-sand);
+  padding-top: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.challenge-subtext {
+  font-size: 0.82rem;
+  color: #6d8273;
+  font-style: italic;
+}
+
+.draw-challenge-btn {
+  padding: 10px 20px;
+  font-size: 0.88rem;
+}
+
+.spinning {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  .challenge-card {
+    padding: 24px 18px;
+  }
+  .challenge-footer {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+}

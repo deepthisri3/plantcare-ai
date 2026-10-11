@@ -1,0 +1,51 @@
+.open-ai-section {
+  padding: 56px 0;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pillar-card {
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-sage-soft);
+  color: var(--color-forest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.pillar-title {
+  font-size: 1.1rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 8px;
+}
+
+.pillar-desc {
+  font-size: 0.86rem;
+  color: #556a5b;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
